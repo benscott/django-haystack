@@ -108,6 +108,7 @@ class Elasticsearch2SearchBackend(ElasticsearchSearchBackend):
                     },
                     'terms': {
                         'field': facet_fieldname,
+                        'size': 100,
                     }
                 }
                 if 'order' in extra_options:
